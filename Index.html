@@ -8,5 +8,78 @@
 </head>
 <body>
     
+    <h1 align="center">Bikes</h1>
+    <hr>
+
+    <table id="demo" border="1" cellspacing="0" cellpadding="10" width="80%" align="center"></table>
+
+    <script>
+
+        let d;
+        let listentry = ''
+        let listenthusiast = ''
+        let listprofessional = ''
+
+        txt =`
+
+            <tr>
+                <th>TYPE</th>
+                <th>BRAND</th>
+                <th>ENTRY</th>
+                <th>ENTHUSIAST</th>
+                <th>PROFESSIONAL</th>  
+            </tr>
+
+            `;
+
+            fetch('Bikes.xml').then ( reponse => {
+                return reponse.text()
+            }).then(d =>{
+                var doc = new DOMParser().parseFromString(d, "text/xml");
+                var dt = doc.children;
+
+                for(var i of dt){
+                    for(var j of i.children){
+                        var typeOFBike = j.querySelector('Type').textContent;
+                        var brandOFBike = j.querySelector('Brand').textContent;
+                        var entryOFBike = j.querySelector('Entry').children;
+
+                        for(var z of entryOFBike){
+                            listentry += `<li>${z.textContent}</li>`
+                        }
+
+                        var enthusiastofBike = j.querySelector('Enthusiast').children
+
+                        for(var x of enthusiastofBike){
+                            listenthusiast += `<li>${z.textContent}</li>`
+                        }
+
+                        var professionalofBike = j.querySelector('Professional').children
+
+                        for(var y of professionalofBike){
+                            listprofessional += `<li>${z.textContent}</li>`
+                        }
+                            txt +=`
+                            <tr>
+                                <td>${typeOFBike}</td>
+                                <td>${brandOFBike}</td>
+                                <td>${listentry}</td>
+                                <td>${listenthusiast}</td>
+                                <td>${listprofessional}</td>
+                            </tr>
+                            `;
+
+                            console.log(professionalofBike)
+                            listentry ="";
+                            listenthusiast =""
+                            listprofessional =""
+                        
+                    }
+                }
+
+                document.getElementById("demo").innerHTML = txt;
+            })
+
+    </script>
 </body>
 </html>
