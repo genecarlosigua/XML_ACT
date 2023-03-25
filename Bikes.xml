@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bikes>
+
+	
+	<Bike ID="1">
+
+        <Type>Mountain Bike</Type>
+        <Brand>Shimano</Brand>
+        
+        <Entry>	
+            <Model_1>Tourney</Model_1>
+        </Entry>
+
+        <Enthusiast>
+            <Model_1>Altus M2000</Model_1>
+            <Model_2>Acera M3000</Model_2>
+            <Model_3>Alivio M3100</Model_3>
+            <Model_4>Deore M6100,M5100,M4100</Model_4>	
+        </Enthusiast>
+
+        <Professional>
+            <Model_1>SLX M7100</Model_1>
+            <Model_2>Deore XT M8050</Model_2>
+            <Model_3>Deore XT DI2 M8100</Model_3>
+            <Model_4>XTR M9050</Model_4>
+            <Model_5>XTR DI2 M9100</Model_5>
+        </Professional>
+    
+	</Bike>
+
+   
+	<Bike ID="2">
+
+		<Type>Road Bike</Type>
+        <Brand>Shimano</Brand>
+				
+        <Entry>
+            <Model_1>Claris R2000</Model_1>
+            <Model_2>Sora R3000</Model_2>
+            <Model_3>Tiagra 4700</Model_3>	
+        </Entry>
+
+        <Enthusiast> 
+            <Model_1>105 R7000</Model_1>
+            <Model_2>105 DI2 R7150</Model_2>
+            <Model_3>Ultegra R8000</Model_3>
+            <Model_4>Ultegra DI2 R8100</Model_4> 		
+        </Enthusiast>
+
+        <Professional>   
+            <Model_1>Dura-Ace R9100</Model_1>
+            <Model_2>Dura-Ace DI2 R9200</Model_2>     
+        </Professional>
+
+	</Bike>
+
+	<Bike ID="3">
+		
+        <Type>Downhill Bike</Type>
+        <Brand>Shimano</Brand>
+
+         <Entry>	
+            <Model_1></Model_1>
+        </Entry>
+        <Enthusiast>
+            <Model_1>Zee M640</Model_1>		
+        </Enthusiast>
+
+        <Professional>
+            <Model_1>Saint N820</Model_1>	  
+        </Professional>
+			
+	</Bike>
+
+   
+	<Bike ID="4">
+
+        <Type>Gravel Bike</Type>
+        <Brand>Shimano</Brand>
+
+            <Entry>
+                <Model_1>GRX 400</Model_1>
+            </Entry>
+
+            <Enthusiast>
+                <Model_1>GRX RX600</Model_1>
+                <Model_1>GRX RX810</Model_1>		
+            </Enthusiast>
+
+            <Professional> 
+                <Model_1>GRX RX815</Model_1>	
+            </Professional>
+		
+	</Bike>
+
+   
+	<Bike ID="5">
+
+        <Type>TimeTrial Bike</Type>
+        <Brand>Shimano</Brand>
+
+         <Entry>
+            <Model_1>105 DI2 R7150</Model_1>
+        </Entry>
+
+        <Enthusiast>
+            
+            <Model_1>Ultegra DI2 R8100</Model_1>	
+        </Enthusiast>
+
+        <Professional>
+            <Model_1>Dura-Ace DI2 R9200</Model_1>	
+        </Professional>
+
+	</Bike>
+
+</Bikes>
